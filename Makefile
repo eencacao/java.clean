@@ -9,5 +9,8 @@ all:
 run: all
 	java -cp $(BINDIR) adapters.Main
 
+test: all
+	java -ea -cp $(BINDIR) tests.TestMain
+
 clean:
 	rm -rf $(BINDIR)
